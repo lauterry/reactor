@@ -1,0 +1,57 @@
+{
+  "name": "reactor",
+  "version": "1.0.0",
+  "description": "A starter kit for React and Webpack based projects",
+  "author": "Thierry LAU <thierlau@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "build": "node_modules/webpack/bin/webpack.js",
+    "dev": "webpack-dev-server --progress -d",
+    "test": "BABEL_JEST_STAGE=0 jest --coverage"
+  },
+  "babel": {
+    "presets": [
+      "es2015",
+      "react"
+    ]
+  },
+  "jest": {
+    "scriptPreprocessor": "<rootDir>/node_modules/babel-jest",
+    "unmockedModulePathPatterns": [
+      "<rootDir>/node_modules/react",
+      "<rootDir>/node_modules/axios"
+    ]
+  },
+  "dependencies": {
+    "axios": "^0.8.1",
+    "body-parser": "^1.14.2",
+    "bootstrap": "^3.3.5",
+    "colors": "^1.1.2",
+    "express": "4.12.2",
+    "path": "0.11.14",
+    "react": "^0.14.5",
+    "react-dom": "^0.14.5",
+    "serve-static": "1.9.1",
+    "webpack": "^1.12.9"
+  },
+  "devDependencies": {
+    "babel-core": "^6.3.26",
+    "babel-jest": "^6.0.1",
+    "babel-loader": "^6.2.1",
+    "babel-preset-es2015": "^6.3.13",
+    "babel-preset-react": "^6.3.13",
+    "css-loader": "^0.23.1",
+    "file-loader": "^0.8.5",
+    "jest-cli": "^0.8.2",
+    "node-sass": "^3.3.3",
+    "react": "^0.14.5",
+    "react-addons-test-utils": "^0.14.5",
+    "react-hot-loader": "^1.3.0",
+    "sass-loader": "^2.0.1",
+    "style-loader": "^0.12.4",
+    "url-loader": "^0.5.6",
+    "webpack": "^1.12.9",
+    "webpack-dev-server": "^1.14.0"
+  }
+}

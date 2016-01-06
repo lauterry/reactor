@@ -1,0 +1,53 @@
+@import "~bootstrap/dist/css/bootstrap.css";
+
+$default-bg: white;
+$default-text: black;
+
+body {
+	font-family: Georgia, serif;
+	font-size: 17px;
+	background: $default-bg;
+	color: $default-text;
+	padding-top: 80px;
+}
+
+h1 {
+	font-size: 2em;
+	margin: 0.5em 0 1em;
+
+	& > small {
+		color: gray;
+		font-size: 70%;
+	}
+}
+
+.poster {
+	width: 240px;
+	float: left;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	padding-top: 15px;
+}
+
+.thumbnails .caption {
+	margin-left : 250px;
+}
+
+.thumbnails  img {
+	padding-top: 20px;
+	width: 200px;
+}
+
+.caption > div > label {
+	display : inline-block;
+}
+
+
+.delete-button,
+.order-title-button {
+	margin-left: 10px;
+}
+
+.category-buttons {
+	margin-bottom: 20px;
+}
