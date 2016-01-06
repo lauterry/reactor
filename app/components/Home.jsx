@@ -28,7 +28,7 @@ var Home = React.createClass({
 			<div className="jumbotron home">
 				<h1 className="home_title">React + Webpack Starter Kit</h1>
 				<p className="home_text">{this.state.message}</p>
-				<p><a className="btn btn-primary btn-lg home_button" href="https://facebook.github.io/react/">Learn more</a></p>
+				<p><a className="btn btn-primary btn-lg home_button" href="https://github.com/lauterry/reactor">Learn more</a></p>
 			</div>
 		)
 	}
