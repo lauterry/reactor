@@ -17,6 +17,9 @@ module.exports = {
 		new webpack.NoErrorsPlugin()
 	],
 	module: {
+		preLoaders: [
+			{test: /\.jsx/, loader: "eslint-loader", exclude: /node_modules/}
+		],
 		loaders: [{
 			test: /\.jsx/,
 			loaders: ['react-hot', 'babel']
@@ -44,5 +47,9 @@ module.exports = {
 	},
 	resolve: {
 		extensions: ['', '.js', '.jsx']
+	},
+	eslint: {
+		configFile: './.eslintrc',
+		fix: true
 	}
 };
